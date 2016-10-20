@@ -1,0 +1,28 @@
+body {
+  margin: 25px 50px;
+
+}
+
+h1 {
+  color: blue;
+}
+
+h2 {
+  color: #f1b109;
+
+}
+
+.mainlist {
+  color: blue;
+}
+
+.mainlistul {
+  list-style: square;
+}
+.fruitlist {
+  list-style: disc;
+
+}
+.fruitlist li:first-child {
+  color: red;
+}

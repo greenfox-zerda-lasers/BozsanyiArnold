@@ -1,0 +1,22 @@
+p {
+  font-size: 18px;
+
+}
+
+body {
+  margin: 35px 45px;
+}
+
+p {
+  padding: 0px 20px;
+  border-style: solid;
+  margin: 0px;
+}
+
+article p:first-child {
+  border-top-style: hidden;
+}
+
+article p:last-child {
+  border-bottom-style: hidden;
+}

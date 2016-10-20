@@ -1,0 +1,19 @@
+body {
+  margin: 25px 50px;
+
+}
+p {
+  font-size: 18px;
+  padding: 45px;
+  border-style: solid;
+  background: url("../../../../../Downloads/duckforproblem-8.png") no-repeat;
+}
+article p:first-child {
+  background-position: top left;
+}
+article p:nth-child(2) {
+  background-position: center;
+}
+article p:last-child {
+  background-position: bottom right;
+}

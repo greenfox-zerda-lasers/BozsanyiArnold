@@ -1,0 +1,32 @@
+
+body {
+  margin: 35px 50px;
+}
+.upperboxes li {
+  font-size: 30px;
+  color: #2f4fef;
+  border-style: solid;
+  border-width: 4px;
+  border-color: black;
+  background-color: #ffff00;
+  padding: 25px 20px;
+
+}
+.lowerboxes li {
+  font-size: 30px;
+  color: #ff020a;
+  border-style: solid;
+  border-width: 4px;
+  border-color: black;
+  background-color: #00ffff;
+  padding: 25px 20px;
+}
+ul {
+  list-style: none;
+  padding: 0px;
+  border: 20px;
+  border-style: solid;
+  border-color: #047e05;
+  width: 280px;
+  margin: 10px;
+}
