@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+}
+
+header  {
+  background:url("anakin.png") top;
+  background-size: cover;
+  height: 405px;
+  margin: 0;
+  border-top-style: solid;
+  border-top-color: black;
+}
+header h2 {
+  margin-top: 260px;
+  margin-left: 294px;
+  margin-bottom: 1px;
+  font-family: 'abril fatface';
+  font-size: 35px;
+  color: #222;
+  line-height: 13px;
+
+}
+header h1 {
+  margin-left: 294px;
+  margin-top: 1px;
+  font-size: 70px;
+  font-family: 'abril fatface';
+  color: #222;
+}
+
+.intraduction {
+  font-family: 'Josefin Sans';
+  margin: 66px 294px 70px 294px;
+  font-size: 20px;
+  line-height: 35px;
+  color: #222;
+}
+.quotes {
+  font-size: 47px;
+  font-family: 'abril fatface';
+  background-color: #222;
+  color: white;
+  line-height: 90px;
+  margin: 60px 240px;
+  text-align: center;
+  padding: 30px;
+}
+.achievements {
+  font-family: 'Josefin Sans';
+  margin: 66px 294px 70px 294px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #222;
+}
+.exp {
+  font-family: 'Josefin Sans';
+  margin: 66px 294px 70px 294px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #222;
+}
+.exp i {
+  font-family: 'Merriweather';
+  font-size: 15px;
+  line-height: 15px;
+}
