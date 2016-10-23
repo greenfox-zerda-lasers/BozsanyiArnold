@@ -44,12 +44,13 @@ article .intraduction {
   font-family: 'abril fatface';
   background-color: rgb(68, 68, 68);
   color: white;
-  line-height: 90px;
   text-align: center;
   padding: 30px;
   width: 795px;
-
+  margin-right: 245px;
 }
+
+
 .achievements {
   font-size: 18px;
   line-height: 22px;
@@ -81,8 +82,10 @@ article .intraduction {
   font-size: 18px;
   line-height: 22px;
 }
-
 hr {
   height: 5px;
   background: black;
+}
+.quotes + p {
+  font-size: 150px;
 }
