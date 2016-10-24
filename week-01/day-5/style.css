@@ -32,12 +32,12 @@ article {
   font-family: 'Josefin Sans';
   margin: 66px 294px 70px 294px;
   color: #222;
-  font-style:
 }
 
 article .intraduction {
   font-size: 20px;
   line-height: 35px;
+  font-weight: 650;
 }
 .quotes {
   font-size: 47px;
@@ -86,6 +86,14 @@ hr {
   height: 5px;
   background: black;
 }
-.quotes + p {
-  font-size: 150px;
+.absforq {
+    position: relative;
+
+}
+.absforq span{
+  position: absolute;
+  font-size: 120px;
+  color: white;
+  font-family: 'abril fatface';
+  margin-right: 20px;
 }
