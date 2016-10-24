@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+}
+body,html {
+  background: #222;
+  height: 100%;
+}
+.maincontainer {
+  height: 600px;
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  background: white;
+}
+.item {
+  min-width: 100px;
+  min-height: 100px;
+}
+header {
+  background: aqua;
+  width: 800px;
+  height: 100px;
+  margin: auto;
+}
+footer {
+  background: blue;
+  width: 800px;
+  height: 100px;
+  margin: auto;
+}
+.leftside {
+  background: orange;
+  height: 600px;
+  width: 100px;
+}
+.rigthside {
+  background: purple;
+  height: 600px;
+  width: 100px;
+  order: 1;
+}
+
+.maincontent {
+  background: red;
+  width: 500px;
+  height: 600px;
+  margin: 0 50px;
+  position: relative;
+}
+.blackbox {
+  background: black;
+  max-width: 100px;
+  max-height: 100px;
+  position: absolute;
+  left: 395px;
+  top: 495px;
+  margin: auto;
+}

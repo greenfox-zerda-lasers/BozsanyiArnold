@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+article {
+  width: 25%;
+  font-size: 1.1em;
+  margin: 2%;
+  border: 4px black;
+  border-bottom: solid;
+  padding: 2%;
+}
+.first-duck img {
+  float: left;
+}
+.second-duck img {
+  float: right;
+}
