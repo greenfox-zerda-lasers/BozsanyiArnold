@@ -32,12 +32,19 @@ article {
   font-family: 'Josefin Sans';
   margin: 66px 294px 70px 294px;
   color: #222;
+<<<<<<< HEAD
+=======
+  font-style:
+>>>>>>> 52b73926019ab918774e1a7e7369baecfb4f4447
 }
 
 article .intraduction {
   font-size: 20px;
   line-height: 35px;
+<<<<<<< HEAD
   font-weight: 650;
+=======
+>>>>>>> 52b73926019ab918774e1a7e7369baecfb4f4447
 }
 .quotes {
   font-size: 47px;
@@ -86,6 +93,7 @@ hr {
   height: 5px;
   background: black;
 }
+<<<<<<< HEAD
 .absforq {
     position: relative;
 
@@ -96,4 +104,8 @@ hr {
   color: white;
   font-family: 'abril fatface';
   margin: 0;
+=======
+.quotes + p {
+  font-size: 150px;
+>>>>>>> 52b73926019ab918774e1a7e7369baecfb4f4447
 }
