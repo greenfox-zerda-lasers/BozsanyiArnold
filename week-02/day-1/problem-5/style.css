@@ -2,6 +2,33 @@
   margin: 0;
 }
 body,html {
-  background: #222;
   height: 100%;
+}
+ .main {
+   width: 900px;
+   height: 900px;
+   background: rgb(128, 128, 128);;
+   display: flex;
+   margin: auto;
+   position: relative;
+   flex-wrap: wrap;
+ }
+ .box {
+   height: 250px;
+   width: 250px;
+   background: rgb(255, 99, 71);
+   border: solid black 5px;
+   margin: 0 15px;
+ }
+.main div:nth-child(5) {
+  position: relative;
+  top: 45px;
+  left: 35px;
+}
+.box p {
+  text-align: center;
+  position: absolute;
+  font-size: 50px;
+  left: 25px;
+  top: 90px;
 }
