@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+}
+body {
+  display: flex;
+}
+header {
+  display: flex;
+  background: aqua;
+  margin: 0;
+  width: 100%;
+  position: fixed;
+  justify-content: space-around;
+  height: 100px;
+  align-items:center;
+}
+h1 {
+  display: block;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content: flex-end;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+}
+nav a:first-child:after:active{
+  background: white;
+}
+nav a:hover{
+  background: white;
+}
+.content{
+  margin: 150px 50px;
+}
+.content p {
+  margin-top: 20px;
+}
+.content h1 {
+  margin-bottom:20px;
+}
