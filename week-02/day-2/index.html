@@ -7,9 +7,39 @@
   </head>
   <body>
     <h1>Profil</h1>
-    <! --form is the main flex container --!>
-    <form>
 
     <form>
+                          <! --TITLES --!>
+      <section class="titles">
+        <div class="personal">
+          <p class="titles">Személyes adatok</p>
+        </div>
+        <div class="contact">
+          <p class="titles">Kapcsolat</p>
+        </div>
+      </section>
+                      <! --Name and Phone --!>
+      <section class="nameandphone">
+        <div class="nameinput">
+          <label for="name">Név<span>*</span></label><br />
+          <input id="name" type="text" required />
+        </div>
+        <div class="phone">
+          <label for="phone">Telefonszám<span>*</span><br />
+            <input id="phone" type="number" required>
+        </div>
+      </section>
+      <section class="3rdline">
+        <div class="gender">
+          <div class="gendertitle">
+            <p>Nemed</p>
+          </div>
+          <div class="genderinputs">
+            <input type="radio" id="female"><label for="female">Nő</label>
+            <input type="radio" id="male"><label for="male">Férfi</label>
+          </div>
+        </div>
+      </section>
+    </form>
   </body>
 </html>
