@@ -20,3 +20,6 @@ article p:first-child {
 article p:last-child {
   border-bottom-style: hidden;
 }
+article p:nth-child(6):hover {
+  background: tomato;
+}

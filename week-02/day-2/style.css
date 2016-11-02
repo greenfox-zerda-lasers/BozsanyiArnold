@@ -1,78 +1,186 @@
-* {
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #dcd6cd;
+  font-family: arial;
+  margin: 50px;
+}
+h1{
+  font-size: 2em;
+  font-weight: 400;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
   margin: 0;
 }
-body{
-  display: flex;
-  margin: 50px;
-  font-family: arial;
-  background: #dcd6cd;
-  flex-direction: column;
-}
-body h1{
-  display:block;
-  font-size: 2em;
-  color: #4a4261;
-  font-weight: normal;
-}
-form{
-  display: flex;
-  width: 600px;
-  flex-direction: column;
+label span {
+  color: crimson;
 }
 
-                /*First layers!!!!*/
-.titles, .nameandphone {
+/*^^^^^^^^^^^^^^^^^^Main style^^^^^^^^^^^^^^^^^^^^^*/
+
+
+.first, .second,.third {
   display: flex;
+  justify-content: space-between;
   width: 100%;
+}
+.personal,.contact {
+  width: 45%;
+  height: 30px;
+  font-size: 1.5em;
+  background: #938c97;
+  border-radius: 4px;
+  margin: 10px 0px;
+}
+.nameinput {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+#name,#phone {
+  height: 30px;
+  border-radius: 4px;
+}
+.phone {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+
+/*^^^^^^^^^^^^^^^^^^Name and Phone style^^^^^^^^^^^^^^^^^^^^^*/
+
+
+.thirdls {
+  display: flex;
+  width: 45%;
   justify-content: space-between;
 }
-              /*First layers END!!!*/
-              /*Secondary layers besides CHECKBOX!!!*/
-.personal, .contact {
-  display: block;
-  background: grey;
+.gender,.yob {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+.genderinputs {
+  padding-bottom: 6px;
+}
+.genderinputs label {
+  padding-left: 10px;
+}
+#yob {
   width: 45%;
   height: 30px;
   border-radius: 4px;
 }
-            /*Secondary layers END!!!*/
-            /*CONTENT!!!!*/
-.titles p {
-  font-size: 1.5em;
-  color: white;
-  font-weight: normal;
-}
-section label span {
-  color: crimson;
-}
-.nameinput, .phone {
-  width: 45%;
-  margin: 10px 0px;
-}
-.nameinput label, .phone label, .yob label {
-  font-size: 1.2em;
-}
-#name, #phone {
-  width: 100%;
-  height: 30px;
-}
 
-/*^^^^^^^^^^^^^^^^^^^Name and form upstairs^^^^^^^^^^^^^^^^^^^^^^^^^*/
-.3rdline {
-  display: flex;
-  width: 100%;
-}
-.gender {
+.email {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 45%;
 }
-.gendertitle {
-  display: block;
+#email {
+  width: 100%;
+  height: 30px;
+  border-radius: 4px;
+}
+
+
+/*^^^^^^^^^^^^^^^^^^#YOB ,.GENDER ,#EMAIL style^^^^^^^^^^^^^^^^^^^^^*/
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.cbtitle {
+  padding-top: 5px;
+}
+.cblists {
+  display: flex;
   width: 100%;
 }
-.genderinputs {
+.leftlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.rigthlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 45px;
+}
+.cbfinal {
+  display: flex;
+  flex-direction: column;
+  width:45%;
+  justify-content: space-between;
+}
+
+/*^^^^^^^^^^^^^^^^^^cblists style^^^^^^^^^^^^^^^^^^^^^*/
+.fourth {
   display: flex;
   justify-content: space-between;
-  width: 100%;
 }
+.section4rigth {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+#fbp,#twp {
+  width: 100%;
+  height: 30px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+.fourth p {
+    padding-bottom: 5px;
+}
+select {
+  width: 100%;
+  height: 30px;
+  border-radius: 4px;
+}
+
+/*^^^^^^^^^^^^^^^^^^fourth finish style^^^^^^^^^^^^^^^^^^^^^*/
+
+.fifth {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+#intraduc {
+  height: 190px;
+  width: 100%;
+  border-radius: 4px;
+  padding-bottom: 160px;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+
+/*^^^^^^^^^^^^^^^^^^INTRADUCTION style^^^^^^^^^^^^^^^^^^^^^*/
+
+.sixth {
+  display: flex;
+  flex-direction: column;
+}
+.seventh {
+   display: flex;
+   width: 45%;
+   font-size: 0.9em
+}
+
+/*^^^^^^^^^^^^^^^^^^CV style^^^^^^^^^^^^^^^^^^^^^*/
+
+.last {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*^^^^^^^^^^^^^^^^^^LAST style^^^^^^^^^^^^^^^^^^^^^*/

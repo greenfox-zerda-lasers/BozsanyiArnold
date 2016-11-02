@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Profil</h1>
+    <form>
+      <section class="topuntilintra">
+        <div class="leftsidestuff">
+          <div class="lefttitle">
+            <p>Személyes Adatok</p>
+          </div>
+          <div class="name">
+            <label class="bold" for="name">Név<span>*</span></label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="yobandgender">
+            <div class="yob">
+              <label class="bold" for="yob">Születési éved</label>
+              <input type="text" id="yob" placeholder="pl. 1984">
+            </div>
+            <div class="gender">
+              <p class="bold">Nemed</p>
+              <div class="genderinput">
+                <input type="radio" id="female">
+                <label class="notbold" for="female">nő</label>
+                <input type="radio" id="male">
+                <label class="notbold" for="male">férfi</label>
+              </div>
+            </div>
+          </div>
+          <div class="checkboxlist">
+            <p class="notbold">Milyen márkákat szeretsz?</p>
+            <div class="lists">
+              <ul class="leftlist">
+                <li><input type="checkbox" id="adidas"><label class="smaller" for="adidas">Adidas</label></li>
+                <li><input type="checkbox" id="apple"><label class="smaller" for="apple">Apple</label></li>
+                <li><input type="checkbox" id="cola"><label class="smaller" for="cola">Coca-Cola</label></li>
+                <li><input type="checkbox" id="mazda"><label class="smaller" for="mazda">Mazda</label></li>
+                <li><input type="checkbox" id="Nike"><label class="smaller" for="Nike">Nike</label></li>
+              </ul>
+              <ul class="rightlist">
+                <li><input type="checkbox" id="opel"><label class="smaller" for="opel">Opel</label></li>
+                <li><input type="checkbox" id="rayban"><label class="smaller" for="rayban">Ray-Ban</label></li>
+                <li><input type="checkbox" id="starbucks"><label class="smaller" for="starbucks">Starbucks</label></li>
+                <li><input type="checkbox" id="Tesla"><label class="smaller" for="Tesla">Tesla</label></li>
+                <li><input type="checkbox" id="Yahoo"><label class="smaller" for="Yahoo">Yahoo</label></li>
+              </ul>
+              <p class="yccm">Többet is választhatsz!</p>
+            </div>
+          </div>
+        </div>
+        <div class="rightsidestuff">
+          <div class="rigthtitle">
+            <p>Kapcsolat</p>
+          </div>
+          <div class="phone">
+            <label class="bold" for="phonenum">Telefonszám<span>*</span></label>
+            <input type="text" id="phonenum" required />
+          </div>
+          <div class="email">
+            <label class="bold" for="mail">E-mail cím<span>*</span></label>
+            <input type="text" id="mail" placeholder="+36 -- --- ----" required >
+          </div>
+          <div class="fbp">
+            <label class="bold" for="fbp">Facebook profilod</label>
+            <input type="text" id="fbp" placeholder="http://facebook.com/...">
+          </div>
+          <div class="twp">
+            <label class="bold" for="twp">Twitter profilod</label>
+            <input type="text" id="twp" placeholder="http://twitter.com/...">
+          </div>
+          <div class="kindofflat">
+            <p class="bold">Milyen házban laksz?</p>
+            <input type="text" id="kindofflat">
+          </div>
+        </div>
+      </section>
+      <section class="bottompart">
+        <div class="intraduction">
+          <label class="bold" for="intraduc">Bemutatkozás<span>*</span></p>
+          <textarea placeholder="Írj magadról pár mondatot!"></textarea>
+        </div>
+        <div class="cv">
+          <p class="bold">CV feltöltése</p>
+          <button class="notbold" type="button" name="CV">FILE KIVÁLASZTÁSA</button>
+        </div>
+        <div class="acceptterms">
+          <input type="checkbox" id="acceptterms">
+          <label for="acceptterms">Elfogadom a <a href="#"> felhasználási feltételeket</a></label>
+        </div>
+        <div class="botbut">
+          <div class="buttonone">
+            <button class="notbold" type="button" name="save">MENTÉS</button>
+          </div>
+          <div class="buttontwo">
+            <button class="notbold" type="button" name="delete">ŰRLAP TÖRLÉSE</button>
+          </div>
+        </div>
+      </section>
+    </form>
+  </body>
+</html>

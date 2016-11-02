@@ -9,8 +9,10 @@
     <h1>Profil</h1>
 
     <form>
+
                           <! --TITLES --!>
-      <section class="titles">
+
+      <section class="first">
         <div class="personal">
           <p class="titles">Személyes adatok</p>
         </div>
@@ -18,26 +20,124 @@
           <p class="titles">Kapcsolat</p>
         </div>
       </section>
-                      <! --Name and Phone --!>
-      <section class="nameandphone">
+
+                      <!- Name and Phone -!>
+
+      <section class="second">
         <div class="nameinput">
-          <label for="name">Név<span>*</span></label><br />
+          <label for="name">Név<span>*</span></label>
           <input id="name" type="text" required />
         </div>
         <div class="phone">
-          <label for="phone">Telefonszám<span>*</span><br />
-            <input id="phone" type="number" required>
+          <label for="phone">Telefonszám<span>*</span></label>
+          <input id="phone" type="text" placeholder="+36 -- --- ----" required>
         </div>
       </section>
-      <section class="3rdline">
-        <div class="gender">
-          <div class="gendertitle">
-            <p>Nemed</p>
+
+                      <! -#YOB ,.GENDER ,#EMAIL elements - !>
+
+      <section class="third">
+        <div class="thirdls">
+          <div class="yob">
+            <label for="yob">Születési éved</label>
+            <input type="text" id="yob" placeholder="pl. 1984">
           </div>
-          <div class="genderinputs">
-            <input type="radio" id="female"><label for="female">Nő</label>
-            <input type="radio" id="male"><label for="male">Férfi</label>
+          <div class="gender">
+            <div class="gendertitle">
+              <p>Nemed</p>
+            </div>
+            <div class="genderinputs">
+              <input type="radio" id="female"><label for="female">Nő</label>
+              <input type="radio" id="male"><label for="male">Férfi</label>
+            </div>
           </div>
+        </div>
+        <div class="email">
+          <label for="email">E-mail cím<span>*</span><br>
+          <input id="email" type="text" placeholder="nev@domain.hu">
+      </div>
+    </section>
+
+                      <! -CHECKBOX LISTS,FBP,TWP,FLATTYPE elements - !>
+
+        <section class="fourth">
+          <div class="cbfinal">
+            <div class="cbtitle">
+              <p>
+                Milyen márkákat szeretsz?
+              </p>
+            </div>
+            <div class="cblists">
+              <ul class="leftlist">
+                <li><input type="checkbox"><label>Adidas</label> </li>
+                <li><input type="checkbox"><label>Apple</label> </li>
+                <li><input type="checkbox"><label>Coca-Cola</label> </li>
+                <li><input type="checkbox"><label>Mazda</label> </li>
+                <li><input type="checkbox"><label>Nike</label> </li>
+              </ul>
+              <ul class="rigthlist">
+                <li><input type="checkbox"><label>Opel</label> </li>
+                <li><input type="checkbox"><label>Ray-Ban</label> </li>
+                <li><input type="checkbox"><label>Starbuks</label> </li>
+                <li><input type="checkbox"><label>Tesla</label> </li>
+                <li><input type="checkbox"><label>Yahoo</label> </li>
+              </ul>
+          </div>
+          <p>
+            Többet is választhatsz!
+          </p>
+        </div>
+          <div class="section4rigth">
+            <div class="fb">
+              <label for="fbp">Facebook profilod</label>
+              <input id="fbp" name="fbp" type="text" placeholder="http://facebook.com/...">
+            </div>
+            <div class="tw">
+              <label for="twp">Twitter profilod</label>
+              <input id="twp" name="twp" type="text" placeholder="http://twitter.com/...">
+            </div>
+            <div class="flattype">
+              <p>
+                Milyen házban laksz?
+              </p>
+              <select>
+                <option> <option>
+                <option>Kertes ház</option>
+                <option>Lakótelepi lakás</option>
+                <option>Társasház</option>
+              </select>
+          </div>
+        </div>
+      </section>
+
+                  <! -INTRADUCTION elements - !>
+
+      <section class="fifth">
+        <label for="intraduc">Bemutatkozás<span>*</span></label>
+        <textarea type="text" id="intraduc" name="intraduc" placeholder="Írj magadról pár mondatot" required /></textarea>
+      </section>
+
+                  <! -CV and cv button elements - !>
+
+      <section class="sixth">
+        <label for="cvbut">CV feltöltése</label>
+        <input type="file" accept="multiply" id="cvul">
+      </section>
+
+                  <! -Accept terms elements - !>
+
+      <section class="seventh">
+        <input type="checkbox" name="accept"><label form="accept">Elfogadom a <a>felhasználási feltételeket</a></label>
+      </section>
+
+                  <! -SAVE-Delete BUTTONS elements - !>
+
+      <section class="last">
+        <div class="save">
+          <p>MENTÉS</p>
+        </div>
+        <div class="del">
+          <p>ŰRLAP TÖRLÉSE</p>
         </div>
       </section>
     </form>

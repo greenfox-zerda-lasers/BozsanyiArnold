@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  text-decoration: none;
+}
+body {
+  display: flex;
+  margin: 5px;
+}
+a {
+  color: #4373c1;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/*********************ASIDE FORM*********************/
+
+aside {
+  font-size: 0.8em;
+  width: 176px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(246, 246, 246);
+  font-family: arial;
+}
+aside img {
+  margin-top: -6px;
+}
+aside ul {
+  list-style-type: none;
+  padding-right: 20px;
+}
+aside p {
+  width: 80%;
+  margin-top: 5px;
+}
+aside ul{
+  margin: 2.5px 0px;
+}
+aside hr {
+  width: 80%;
+  color: lightgrey;
+}
+aside li {
+  margin: 2px 0px;
+}
+/*********************ASIDE FORM*********************/
+/*********************HEADER FORM*********************/
+
+header {
+  font-size: 0.9em;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  background:-webkit-linear-gradient(bottom, rgb(246, 246, 246) 0%, rgb(255, 255, 255) 100% )
+}
+.topnav {
+  display: flex;
+  justify-content: flex-end;
+}
+.topnav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+}
+.botnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rightside ul,.leftside ul {
+  list-style-type: none;
+  display: flex;
+}
+.rightside ul {
+  width: 80px;
+  justify-content: space-around;
+  padding-right: 10px;
+}
+.leftside input {
+  height: 20px;
+}
+.leftside ul {
+  width: 400px;
+  justify-content: space-around;
+  align-items: center;
+}
+.leftside ul li {
+  flex-grow: 1;
+}
+.leftside ul input {
+  flex-grow: 3;
+}
+/*********************HEADER FORM*********************/
+/*********************MAINCONTENT FORM*********************/

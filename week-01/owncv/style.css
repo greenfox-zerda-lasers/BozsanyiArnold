@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+}
+body {
+  margin: 50px;
+  font-family: arial;
+  background: #dcd6cd;
+}
+form {
+  display: flex;
+  width: 600px;
+  flex-direction: column;
+}
+.titleline {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.lefttitle,.righttitle {
+  height: 30px;
+  width: 45%;
+  background: #222;
+}

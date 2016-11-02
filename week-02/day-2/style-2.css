@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 50px;
+  background: #dcd6cd;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 2em;
+}
+
+form {
+  display: flex;
+  width: 750px;
+  height: 1500px;
+  margin: 0;
+  border: solid 4px black;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+form div {
+  margin: 1% 0px;
+}
+
+section {
+  border: tomato solid 4px;
+  box-sizing: border-box;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  height: 498px;
+}
+.personaltitle,.contacttitle {
+  box-sizing: border-box;
+  border: black solid 4px;
+  width: 100%;
+  height: 75px;
+}
+.personalname,.contacts div:not(.contacttitle) {
+  box-sizing: border-box;
+  border: 4px green solid;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+}
+.personalyobandgender {
+  display: flex;
+  box-sizing: border-box;
+  border: 4px green solid;
+  height: 75px;
+  justify-content: space-between;
+  align-items: center;
+}
+.yob {
+  box-sizing: border-box;
+  border: 4px blue solid;
+  height: 100%;
+  width: 45%;
+}
+.gender {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border: 4px blue solid;
+  width: 45%;
+  height: 100%;
+  justify-content: space-around;
+}
+.gendertitle {
+  height: 50%;
+  width: 100%;
+  box-sizing: border-box;
+  border: 4px solid red;
+}
+.genderinputs {
+  height: 50%;
+  width: 100%;
+  box-sizing: border-box;
+  border: 4px solid red;
+}
+.personalcheckbox {
+  height: 225px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 4px darkgrey solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cbtitle {
+  height: 7%;
+  width: 100%;
+  box-sizing: border-box;
+  border: 4px solid blue;
+}
+ul {
+  list-style-type: none;
+  box-sizing: border-box;
+  border: 4px solid red;
+  width: 45%;
+}
+.cbinput {
+  height:95%;
+  width: 100%auto;
+  box-sizing: border-box;
+  border: 4px solid blue;
+  display: flex;
+  justify-content: space-around;
+}
+p {
+  border: 4px solid black;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+.intraduction {
+  box-sizing: border-box;
+  border: 4px solid tomato;
+  width: 100%;
+  height: 300px;
+  margin: -300px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.intraductiontitle {
+  box-sizing: border-box;
+  border: 4px solid black;
+  height: 10%;
+}
+.textarea {
+  box-sizing: border-box;
+  border: 4px solid black;
+  height: 80%;
+}
+.CV {
+  width: 100%;
+  box-sizing: border-box;
+  border: 4px tomato solid;
+  height: 100px;
+  margin: -300px 0px;
+}
