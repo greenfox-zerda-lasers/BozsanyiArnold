@@ -1,0 +1,150 @@
+tejtejtejtej
+zacsko
+tejtejtejtej
+zacsko
+tejtejtejtej
+zacsko
+tejtejtejtej
+zacsko
+tejtejtejtej
+zacsko
+tejtejtejtej
+zacsko
+tejtejtejtej
+zacsko
+tejtejtejtej
+zacsko
+tejtejtejtej
+zacsko
+tejtejtejtej
+zacsko
+tejtejtejtej
+zacsko
+tejtejtejtej
+zacsko
+tejtejtejtej
+zacsko
+tejtejtejtej
+zacsko
+tejtejtejtej
+zacsko
+tejtejtejtej
+zacsko
+tejtejtejtej
+zacsko
+tejtejtejtej
+zacsko
+tejtejtejtej
+zacsko
+tejtejtejtej
+zacsko
+tejtejtejtej
+zacsko
+tejtejtejtej
+zacsko
+v
+tejtejtejtej
+zacsko
+v
+tejtejtejtej
+zacsko
+v
+tejtejtejtej
+zacsko
+
+tejtejtejtej
+zacskotejtejtejtej
+zacsko
+
+tejtejtejtej
+zacsko
+tejtejtejtej
+zacsko
+
+v
+
+tejtejtejtej
+zacsko
+tejtejtejtej
+zacsko
+
+tejtejtejtej
+zacsko
+tejtejtejtej
+zacsko
+from collections import Counter
+def count_lines(filename):
+    open(filename)
+    actual_file = filename
+    close(filename)
+    counted = o
+    for i in filename:
+        while i = '\n':
+            counted += 1
+print(count_lines(zacskostej.txt))
+
+from collections import Counter
+def count_lines(filename):
+    open(filename)
+    actual_file = filename
+    close(filename)
+    counted = o
+    for i in filename:
+        while i = '\n':
+            counted += 1
+print(count_lines(zacskostej.txt))
+
+from collections import Counter
+def count_lines(filename):
+    open(filename)
+    actual_file = filename
+    close(filename)
+    counted = o
+    for i in filename:
+        while i = '\n':
+            counted += 1
+print(count_lines(zacskostej.txt))
+
+from collections import Counter
+def count_lines(filename):
+    open(filename)
+    actual_file = filename
+    close(filename)
+    counted = o
+    for i in filename:
+        while i = '\n':
+            counted += 1
+print(count_lines(zacskostej.txt))
+
+from collections import Counter
+def count_lines(filename):
+    open(filename)
+    actual_file = filename
+    close(filename)
+    counted = o
+    for i in filename:
+        while i = '\n':
+            counted += 1
+print(count_lines(zacskostej.txt))
+
+from collections import Counter
+def count_lines(filename):
+    open(filename)
+    actual_file = filename
+    close(filename)
+    counted = o
+    for i in filename:
+        while i = '\n':
+            counted += 1
+print(count_lines(zacskostej.txt))
+
+from collections import Counter
+def count_lines(filename):
+    open(filename)
+    actual_file = filename
+    close(filename)
+    counted = o
+    for i in filename:
+        while i = '\n':
+            counted += 1
+print(count_lines(zacskostej.txt))

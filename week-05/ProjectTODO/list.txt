@@ -1,0 +1,4 @@
+ - (x) go to school
+ - (x) make a game
+ - (x) make the TODO app
+ - (x) make a presentation
