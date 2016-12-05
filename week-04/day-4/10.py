@@ -1,4 +1,3 @@
-
 # 10. The fibonacci sequence is a famous bit of mathematics, and it happens to
 # have a recursive definition. The first two values in the sequence are
 # 0 and 1 (essentially 2 base cases). Each subsequent value is the sum of the

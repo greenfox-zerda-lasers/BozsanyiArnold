@@ -7,7 +7,7 @@ def decrypt(file_name):
     decrypted = ''
     for line in lines:
         for x in range(0,len(line),2):
-             decrypted += line[x]
+            decrypted += line[x]
     return decrypted
 
 print(decrypt('texts/duplicated_chars.txt'))

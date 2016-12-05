@@ -2,8 +2,6 @@ from view import View
 from model import GameZones
 from model import Hero
 from model import Skeleton
-from model import Boss
-from model import Characters
 import random
 
 def dice():
@@ -15,17 +13,14 @@ class GamePlay:
         self.gamezones = GameZones()
         self.hero = Hero()
         self.skeleton = Skeleton()
-        self.boss = Boss()
-        self.characters = Characters()
         self.view.drawzone(self.gamezones.gamezone1)
-        self.view.show_boss(self.boss.position)
-        self.view.show_skeleton(self.skeleton.positions)
         self.view.show_hero('s',0,0)
+        self.view.show_skeleton(self.skeleton.positions)
         self.view.root.bind('<w>',self.move)
         self.view.root.bind('s',self.move)
         self.view.root.bind('a',self.move)
         self.view.root.bind('d',self.move)
-        self.view.root.bind('<space>',self.fight_with_skeleton1)
+        self.view.root.bind('<space>',)
         self.view.canvas.mainloop()
 
     def move(self,event):
@@ -40,22 +35,12 @@ class GamePlay:
             self.hero.position[0] -= 1
         self.view.show_hero(event.keysym, self.hero.position[1],self.hero.position[0])
         self.hero.movement_counter += 1
+        # self.move_skeletons()
 
     def validator(self,x,y):
         if y <= 9 and y >= 0 and x <= 10 and x >= 0:
             if self.gamezones.gamezone1[x][y] == 'f':
                 return True
         return False
-
-    def fight_with_skeleton1(self,event):
-        if event.keysym == '<space>':
-            self.skeleton.hp -= (self.hero.sp - self.skeleton.dp)
-            self.hero.hp -= (self.skeleton.sp - self.hero.dp)
-            if self.skeleton.hp <= 0:
-                self.view.canvas.delete('skeleton1')
-            elif self.hero.hp <= 0:
-                self.view.canvas.delete('hero')
-                self.hero.position = [0,0]
-                self.view.show_hero('s',0,0)
 
 gameplay1 = GamePlay()

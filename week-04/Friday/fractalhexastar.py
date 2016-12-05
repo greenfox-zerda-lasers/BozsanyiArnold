@@ -15,7 +15,7 @@ canvas.pack()
 
 
 def hexanerv(x,y,size):
-    time.sleep(0.1)
+    time.sleep(0.00000000001)
     canvas.create_polygon(
     x+size/4,y,
     x+size*0.75,y,
