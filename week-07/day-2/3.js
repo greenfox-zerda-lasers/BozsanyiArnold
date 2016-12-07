@@ -5,10 +5,9 @@
 // so it should call the array 3 times if the array has 3 elements
 
 function each (arr, fun) {
-  var result = []
-  fun = arr.length
-  result.push(arr * fun)
-  return result
+  for (var i = 0; i < arr.length; i++) {
+    fun(arr[i])
+  }
 }
 
-console.log(each([1,2,3], 3))
+each([1,1,2,3,4,5], console.log)
