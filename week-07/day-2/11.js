@@ -16,8 +16,8 @@ function Stack () {
     this.storage[this.storage.length] = something
   }
   this.pop = function () {
-    var deleted = this.storage.length -= 1
-    this.storage[this.storage.length - 1]
+    var deleted = this.storage[this.storage.length - 1]
+    this.storage.length -= 1
     return deleted
   }
 }
@@ -25,6 +25,7 @@ var stack = new Stack()
 stack.push('Kutule')
 stack.push('NemAdom')
 stack.push(2)
-stack.push([1, 2, 3])
+stack.push(678)
 console.log(stack.size())
 console.log(stack.pop())
+console.log(stack.size())
