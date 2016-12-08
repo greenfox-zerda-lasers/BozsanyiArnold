@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Workshop: CreateElement</title>
+</head>
+<body>
+  <ul class="asteroids">
+    <li>The King</li>
+  </ul>
+
+  <script>
+    // Remove the king from the list.
+    var parentUl = document.querySelector('ul')
+    var child = parentUl.querySelector('li')
+    parentUl.removeChild(child)
+    // Add 3 list items saying 'The Fox' to the list.
+    // var newItemOne = document.createElement('li')
+    // newItemOne.innerText = 'The Fox'
+    // var newItemTwo = document.createElement('li')
+    // newItemTwo.innerText = 'The Fox'
+    // var newItemThree = document.createElement('li')
+    // newItemThree.innerText = 'The Fox'
+    // parentUl.appendChild(newItemOne)
+    // parentUl.appendChild(newItemTwo)
+    // parentUl.appendChild(newItemThree)
+    for (var i = 0; i < 3; i++) {
+      var newItem  = document.createElement('li')
+      newItem.innerText = 'The Fox'
+      parentUl.appendChild(newItem)
+    }
+  </script>
+  <script src="createelement-2.js"></script>
+</body>
+</html>
