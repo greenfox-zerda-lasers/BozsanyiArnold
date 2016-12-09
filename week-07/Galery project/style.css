@@ -1,0 +1,107 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #b6c8d2;
+}
+
+h1 {
+  color: #0a192d;
+  font-size: 2em;
+}
+
+img {
+  height: 75%;
+  width: 60%;
+}
+
+/*Navivation Bar*/
+
+nav {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/*Buttons and its effects on hover and focus*/
+
+nav button{
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.32);
+  -webkit-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.32);
+  -moz-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.32);
+}
+
+nav button:hover, div {
+  box-shadow: inset 10px 10px 5px -4px rgba(0,0,0,0.32);
+  -webkit-box-shadow: inset 10px 10px 5px -4px rgba(0,0,0,0.32);
+  -moz-box-shadow: inset 10px 10px 5px -4px rgba(0,0,0,0.32);
+}
+
+nav button:focus {
+  box-shadow: inset 10px 10px 5px -4px rgba(0,0,0,0.32);
+  -webkit-box-shadow: inset 10px 10px 5px -4px rgba(0,0,0,0.32);
+  -moz-box-shadow: inset 10px 10px 5px -4px rgba(0,0,0,0.32);
+}
+
+.arrows {
+  width: 5%;
+  height: 100px;
+  background-color: #0a192d;
+  font-size: 2em;
+  color: #b6c8d2;
+}
+
+.arrows p {
+  font-size: 2em;
+  color: white;
+}
+
+.photos {
+  width: 10%;
+}
+
+#currentImage {
+  display: flex;
+  justify-content: center;
+  height: 75%;
+  width: 90%;
+}
+
+.first {
+  background-image: url(pictures/firstpic.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.second {
+  background-image: url(pictures/secondpic.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.third {
+  background-image: url(pictures/thirdpic.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.fourth {
+  background-image: url(pictures/fourthpic.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.fifth {
+  background-image: url(pictures/firstpic.jpg);
+  background-size: cover;
+  background-position: center;
+}
