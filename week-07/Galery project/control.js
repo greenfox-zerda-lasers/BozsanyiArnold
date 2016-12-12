@@ -34,6 +34,8 @@ function thePrev () {
   }
 }
 
+// Arrow function calls
+
 arrowButtons[0].addEventListener('click', thePrev)
 arrowButtons[1].addEventListener('click', theNext)
 
