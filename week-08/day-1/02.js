@@ -10,16 +10,14 @@ function Rectangle(width,height) {
   this.height = height;
 }
 
-function getArea() {
+Rectangle.prototype.getArea = function () {
   return 'The area of the rectangle is:' + this.width * this.height;
 }
 
-function getCircumference() {
-  return 'The circumference of the rectangle is:' + 2 * this.width + 2 * this.height;
+Rectangle.prototype.getCircumference = function () {
+  return 'The circumference of the rectangle is:' + 2 * (this.width + this.height);
 }
 
-var recti = new Rectangle(5, 10);
-console.log(recti.width);
-console.log(recti.height);
-var area = recti.getArea();
-console.log(area);
+var recti = new Rectangle(10, 50);
+console.log(recti.getArea());
+console.log(recti.getCircumference());
