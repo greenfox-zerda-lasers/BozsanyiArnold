@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: #50e3c2;
+  box-sizing: border-box;
+  padding-top: 5%;
+}
+
+form {
+  height: 90%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  align-items: center;
+  border-radius: 4px;
+  -webkit-box-shadow: 20px 25px 5px -14px rgba(70,199,170,1);
+  -moz-box-shadow: 20px 25px 5px -14px rgba(70,199,170,1);
+  box-shadow: 20px 25px 5px -14px rgba(70,199,170,1);
+}
+
+h1 {
+  font-family: 'Lato';
+  font-size: 3em;
+  font-weight: 300;
+  color: #ababab;
+  margin: 8% 0px;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+section input, button {
+  height: 100%;
+  font-size: 1em;
+  border: 1px solid #9b9b9b;
+  outline: none;
+}
+
+section input {
+  width: 50%;
+  height: 38px;
+  border-top-left-radius:4px;
+  border-bottom-left-radius: 4px;
+}
+
+section button {
+  width: 10%;
+  border-top-right-radius:4px;
+  border-bottom-right-radius: 4px;
+  background-color: #cd76d3;
+  color: white;
+}
+
+ul {
+  margin: 4% 0px;
+  list-style-type: none;
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+}
+
+li, .done {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+li p, .done p {
+  width: 48%;
+  height: 100%;
+  font-size: 1.2em;
+  align-self: center;
+  color: #ababab;
+  padding-top: 5px;
+}
+
+.inlinecontrol {
+  width: 12%;
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.inlinecontrol button {
+  height: 25px;
+  width: 25px;
+  background-color: inherit;
+  background-image: url('pictures/trashcan.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 0;
+}
+
+.checkbox {
+  border: solid 2px #ababab;
+  border-radius: 20px;
+  width: 25%;
+  height: 40%;
+}
+
+/*IF SOMETHING COMPLETED STYLE!!!!*/
+
+.done p {
+  color: #d7d7d7;
+}
+
+.done .checkbox {
+  border: solid 2px #ababab;
+  border-radius: 20px;
+  width: 25%;
+  height: 40%;
+  background-image: url('Pictures/checked.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
