@@ -1,0 +1,26 @@
+<!-- // set up a setInterval loop with 1.5 second delays
+// - log the mouse coordinates on each call -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+    var x = 0;
+    var y = 0;
+    function onMouseMove(e){
+      x = e.clientX;
+      y = e.clientY;
+    }
+    function logCoordinates () {
+      console.log('The X coordinate is: ' + x)
+      console.log('The y coordinate is: ' + y)
+      setTimeout(logCoordinates, 1500)
+    }
+    logCoordinates()
+    document.addEventListener('mousemove', onMouseMove)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!-- // Create a circle with 100px diameter (use border radius)
+//  - Make it move from left to right edge
+//  - use requestAnimationFrame -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Karika.</title>
+  </head>
+  <body>
+    <div style="width: 100px; height: 100px;"></div>
+    <script>
+    var body = document.querySelector('body')
+    var theRing = document.querySelector('div')
+    theRing.style.border = '2px solid black'
+    theRing.style.borderRadius = '50px'
+    var currentPos = 0
+
+    var requestAnimationFrame = window.requestAnimationFrame ||
+                                window.mozrequestAnimationFrame ||
+                                window.webkitrequestAnimationFrame ||
+                                window.msrequestAnimationFrame;
+
+    function moveRingie () {
+      currentPos += 5
+      theRing.style.position = 'absolute'
+      theRing.style.left = currentPos + 'px';
+
+      requestAnimationFrame(moveRingie);
+    }
+    moveRingie()
+    </script>
+  </body>
+</html>

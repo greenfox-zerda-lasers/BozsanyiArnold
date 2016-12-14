@@ -1,0 +1,19 @@
+<!-- // Add an event listener to the window and display the mouse's x, y coordinates-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+    function logCoordinates(e) {
+      x = e.clientX;
+      y = e.clientY;
+      console.log('The X coordinate is: ' + x)
+      console.log('The Y coordinate is: ' + y)
+    }
+    window.addEventListener('mousemove', logCoordinates)
+    </script>
+  </body>
+</html>
