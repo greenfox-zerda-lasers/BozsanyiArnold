@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      var list
+      var listOfMovies
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', 'https://sheetsu.com/apis/v1.0/7654fbe24554', true); // Also try http://444.hu/feed
+      xhr.setRequestHeader('Content-Type', 'application/json')
+      xhr.send(JSON.stringify({'MovieTitle':'Pirates of the Caribean',
+                                'Rating':'25',
+                                'Username':'Arnold'}));
+    </script>
+  </body>
+</html>

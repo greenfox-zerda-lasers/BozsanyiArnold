@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Giphy</title>
+  </head>
+  <body>
+    <script>
+      var listOfImges
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC', true); // Also try http://444.hu/feed
+      xhr.send();
+      xhr.onreadystatechange = function (rsp) {
+        if (xhr.readyState === XMLHttpRequest.DONE ) {
+          listOfImges = JSON.parse(xhr.response).data
+          listOfImges.length = 16
+
+          listOfImges.forEach(function (e) {
+            var url = e.images.original_still.url
+            var img = document.createElement('img')
+            img.setAttribute('src', url)
+            document.body.appendChild(img)
+            img.addEventListener('click', function () {
+              img.setAttribute('src', e.images.original.url)
+            })
+          })
+        }
+      }
+      console.log('RESPONSE, xhr.responsee')
+    </script>
+  </body>
+</html>

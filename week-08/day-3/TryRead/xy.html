@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Istenem</title>
+  </head>
+  <body>
+    <script>
+      function kutule (method,data,url,callback) {
+        var xhr = new XMLHttpRequest()
+        xhr.open(method, url)
+        if (method === 'POST') {
+          xhr.setRequestHeader('Content-Type', 'application/json')
+        }
+        xhr.send(JSON.stringify(data))
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (callback !== undefined) {
+              callback(xhr.response)
+            }
+          }
+        }
+      }
+      kutule('POST', {text: 'kutule'}, 'https://mysterious-dusk-8248.herokuapp.com/todos')
+      kutule('DELETE', '23','https://mysterious-dusk-8248.herokuapp.com/todos')
+    </script>
+  </body>
+</html>
