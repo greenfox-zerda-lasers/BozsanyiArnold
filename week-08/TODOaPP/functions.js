@@ -2,7 +2,7 @@
 
    this.getData = function (cb) {
      var xhr = new XMLHttpRequest()
-     xhr.open('GET', 'https://mysterious-dusk-8248.herokuapp.com/todos')
+     xhr.open('GET', 'http://localhost:3000/todos/')
      xhr.send()
      xhr.onreadystatechange = function () {
        if (xhr.readyState === XMLHttpRequest.DONE) {
@@ -11,22 +11,32 @@
      }
    }
 
-   this.pushData = function (data) {
+   this.pushData = function (data, cb) {
      var xhr = new XMLHttpRequest()
-     xhr.open('POST', 'https://mysterious-dusk-8248.herokuapp.com/todos')
+     xhr.open('POST', 'http://localhost:3000/todos/')
      xhr.setRequestHeader('Content-Type', 'application/json')
      xhr.send(JSON.stringify({text: data}))
+     xhr.onreadystatechange = function () {
+       if (xhr.readyState === XMLHttpRequest.DONE) {
+         cb(JSON.parse(xhr.response))
+       }
+     }
    }
 
-   this.deleteDataFromApi = function (event) {
+   this.deleteDataFromApi = function (event, cb) {
      var xhr = new XMLHttpRequest()
-     xhr.open('DELETE', 'https://mysterious-dusk-8248.herokuapp.com/todos/' + event.target.parentElement.id)
+     xhr.open('DELETE', 'http://localhost:3000/todos/' + event.target.parentElement.id)
      xhr.send()
+     xhr.onreadystatechange = function () {
+       if (xhr.readyState === XMLHttpRequest.DONE) {
+         cb(JSON.parse(xhr.response))
+       }
+     }
    }
 
-   this.updateData = function (event) {
+   this.updateData = function (event, cb) {
      var xhr = new XMLHttpRequest()
-     xhr.open('PUT', 'https://mysterious-dusk-8248.herokuapp.com/todos/' + event.target.parentElement.id)
+     xhr.open('PUT', 'http://localhost:3000/todos/' + event.target.parentElement.id)
      xhr.setRequestHeader('Content-Type', 'application/json')
      var textInTarget = event.target.parentElement.parentElement.getElementsByTagName('p')[0].innerText
      if (event.target.parentElement.parentElement.getAttribute('class') === 'done') {
@@ -36,14 +46,13 @@
        event.target.completed = true
        xhr.send(JSON.stringify({text: textInTarget, completed: true}))
      }
-
-    xhr.onreadystatechange = function () {
+     xhr.onreadystatechange = function () {
       if (xhr.readyState === XMLHttpRequest.DONE) {
         console.log(xhr.response)
       }
     }
-   }
- }
+  }
+}
 
 function App () {
   var barmi = this
@@ -53,19 +62,15 @@ function App () {
     this.addItem()
   }
 
-  this.looper = function () {
-    this.ajax.getData(this.render.bind(this))
-  }.bind(this)
-
   this.render = function (items) {
     items.reverse()
     document.querySelector('ul').innerHTML = ''
     items.forEach(function (e) {
       var listElement = document.createElement('li')
-      if (e.completed === true) {
-        listElement.setAttribute('class', 'done')
+      if (e.completed) {
+        listElement.classList.add('done')
       } else {
-        listElement.setAttribute('class', 'undone')
+        listElement.classList.add('undone')
       }
       listElement.innerHTML = '<p>' + e.text + '</p><div class="inlinecontrol" id="' + e.id + '"><button></button><div class="checkbox"></div></div>'
       document.querySelector('ul').appendChild(listElement)
@@ -77,36 +82,42 @@ function App () {
 
   this.addItem = function () {
     document.querySelector('button').addEventListener('click', function (e) {
-      this.ajax.pushData(this.data())
+      this.ajax.pushData(this.data(), function (){
+        this.ajax.getData(this.render.bind(this))
+      }.bind(this))
     }.bind(this))
   }
 
   this.deleting = function () {
     document.querySelectorAll('.inlinecontrol button').forEach(function (e) {
       e.addEventListener('click', function (e) {
-        this.ajax.deleteDataFromApi(e)
+        this.ajax.deleteDataFromApi(e, function (){
+          this.ajax.getData(this.render.bind(this))
+        }.bind(this))
         if (e.target.parentElement.parentElement.getAttribute('class') === 'done') {
           e.target.parentElement.parentElement.setAttribute('class', 'done deleted')
         }else {
           e.target.parentElement.parentElement.setAttribute('class', 'undone deleted')
         }
       }.bind(this))
-
     }.bind(this))
   }
 
   this.setState = function () {
     document.querySelectorAll('.checkbox').forEach(function (e) {
       e.addEventListener('click', function (e) {
-        this.ajax.updateData(e)
+        this.ajax.updateData(e, function (){
+          this.ajax.getData(this.render.bind(this))
+        }.bind(this))
         console.log(this)
-        if (e.target.parentElement.parentElement.getAttribute('class') === 'undone') {
-          e.target.parentElement.parentElement.setAttribute('class', 'done')
+        if (e.target.parentElement.parentElement.classList.contains('undone')) {
+          e.target.parentElement.parentElement.classList.remove('undone')
+          e.target.parentElement.parentElement.classList.add('done')
         } else {
-          e.target.parentElement.parentElement.setAttribute('class', 'undone')
+          e.target.parentElement.parentElement.classList.remove('done')
+          e.target.parentElement.parentElement.classList.add('undone')
         }
       }.bind(this))
-
     }.bind(this))
   }
 
@@ -119,5 +130,3 @@ function App () {
 var app = new App()
 
 app.init()
-
-setInterval(app.looper, 500)
