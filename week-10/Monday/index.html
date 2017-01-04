@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Media Player</title>
+  </head>
+  <body>
+    <section id="fancy">
+    <div class="leftpanel">
+      <div class="headerandplh">
+        <div class="header">
+          <img src="pictures/foxplayer.png" alt="fpl">
+          <div class="plsandbutton">
+            <h1>Playlists</h1>
+            <button id="addpl" type="button" name="addpl"></button>
+          </div>
+        </div>
+        <img id="plh" src="pictures/music-placeholder.png" alt="">
+      </div>
+      <div class="playlists">
+        <ul>
+          <li>All tracks</li>
+          <li>Favorites</li>
+        </ul>
+      </div>
+    </div>
+    <div class="rightpanel">
+      <div class="currentsongandbuttons">
+        <div class="currentsong">
+          <h2>TitleOfSong</h2>
+          <p>Artist</p>
+        </div>
+        <div class="buttonsaddandfav">
+          <button type="button" name="addtrack"></button>
+          <button id="addtofav" type="button" name="addtofavorites"></button>
+        </div>
+      </div>
+      <ul>
+        <li>randomsong</li>
+      </ul>
+    </div>
+  </section>
+  <section id="controlpanel">
+    <button type="button" name="backwards" id="backwards"></button>
+    <button type="button" name="button" id="play"></button>
+    <button type="button" name="button" id="foward"></button>
+    <div class="timepassed">
+    </div>
+    <progress id="playing" value="0" max="100"></progress>
+    <div class="length">
+    </div>
+    <button type="button" name="button" id="volume"></button>
+    <progress id="volumebar" value="100" max="100"></progress>
+  </section>
+  </body>
+</html>

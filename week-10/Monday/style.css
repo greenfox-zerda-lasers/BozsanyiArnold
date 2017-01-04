@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+#fancy {
+  width: 800px;
+  height: 450px;
+  background-color: #f5f5f5;
+  display: flex;
+  padding: 10px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+.leftpanel {
+  height: 450px;
+  width: 350px;;
+}
+
+.headerandplh {
+  width: 350px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header img {
+  width: 100px;
+  height: 100px;
+  padding-left: 10px;
+}
+
+#plh {
+  width: 150px;
+  height: 150px;
+}
+
+.plsandbutton {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+
+
+button {
+  border: none;
+  outline: none;
+  font-size: 35px;
+  width: 30px;
+  height: 30px;
+  background-image: url(pictures/plus.png);
+  background-size: cover;
+  background-color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding: 20px;
+}
+
+li {
+  padding: 10px;
+  height: 30px;
+}
+
+.rightpanel {
+  width: 450px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.currentsongandbuttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.currentsong {
+  width: 400px;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+#addtofav {
+  background-image: url(pictures/favoritestar.svg);
+  background-size: cover;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+.buttonsaddandfav {
+  display: flex;
+  width: 100px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#controlpanel {
+  height: 50px;
+  width: 800px;
+  padding: 10px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  display: flex;
+  align-items: center;
+  background: gray;
+  justify-content: space-around;
+}
+
+#backwards {
+  background-image: url(pictures/backwards.png);
+}
+
+#play {
+  background-image: url(pictures/play.png);
+}
+
+#pause {
+  background-image: url(pictures/pause.png);
+}
+
+#foward {
+  background-image: url(pictures/foward.png);
+}
+
+#volume {
+  background-image: url(pictures/volume.png);
+  margin-right: 10px;
+}
+
+#controlpanel button {
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+#controlpanel button:hover {
+  transition: 2s;
+  background-color: #f5f5f5;
+}
+
+.timepassed, .length {
+  width: 60px;
+  height: 40px;
+}
+
+#playing {
+  width: 400px;
+}
